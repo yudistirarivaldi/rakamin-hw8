@@ -51,10 +51,8 @@ module.exports = {
         gender,
         role
       });
-
-      console.log(user,dataValues.password);
+      
       delete user.dataValues.password;
-
 
       res.status(200).json({
         message: "Berhasil melakukan registrasi",
